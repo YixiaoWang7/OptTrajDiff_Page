@@ -166,7 +166,7 @@
   }
 </style>
 </head>
-<body>
+<!-- <body>
 <div class="video-container">
   <div class="video-box">
     <video class = "fixed_video" poster="" id="tree" autoplay controls muted loop >
@@ -183,7 +183,8 @@
     <div class="caption"><b>Sparsity of SDP</b>. During the inference, only some of the experts (in orange and pink) are activated.</div>
   </div>
 </div>
-</body>
+</body> -->
+
 </html>
 
 
@@ -210,9 +211,13 @@
 <section class="hero image-section">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/teaser.png" alt="Description of image" style="width: 100%; height: auto;">
+      <img src="static/images/1111.png" alt="Description of image" style="width: 100%; height: auto;">
       <h2 class="subtitle has-text-centered" style="font-size: 16px;">
-        Overview of Sparse Diffusion Policy (SDP). 1) Multitask Learning: SDP can simultaneously acquire experts from different demonstration datasets, activate task-specific experts to complish diverse robot tasks. 2) Continual Learning: SDP can continuously learn new tasks by adding only a few new experts without catastrophic forgetting by retaining the old experts and routers. 3) Task Transfer: SDP can freeze the parameter-rich experts and rapidly transfer to new tasks by only tuning lightweight routers for expert selection. Furthermore, SDP can acquire new skills based on the previously learned knowledge.
+        Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
+        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
+        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
+        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
+        computation time at the inference stage.
       </h2>
     </div>
   </div>
