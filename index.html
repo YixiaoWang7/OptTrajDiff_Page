@@ -225,62 +225,127 @@
 <!-- End new image section -->
  
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Joint Trajectory Prediction</h2>
-        <div class="content has-text-justified">
-          <p>
-            Our OGD can .
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
 
 
 
 
 <!-- Paper abstract -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+  <title>Same Row Example</title>
+  <style>
+      .flex-container {
+        display: flex;
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        flex-direction: column; /* Stack items vertically */
+        height: 10vh; /* Full viewport height */
+        text-align: center; /* Center text within the container */
+      }
+  </style>
+</head>
+
+
 <section class="section hero is-light">
   <div class="container is-max-desktop">
-    <div class="columns is-vcentered">
-      <div class="column">
-          <h1 class="title is-3">This is a level 3 title</h1>
+    <body>
+      <div class="flex-container">
+          <h1 class="title is-3">Joint Trajectory Prediction</h1>
       </div>
-      <div class="column">
-          <p>This is a paragraph on the same row.</p>
-      </div>
-      <div class="column">
-          <button class="button is-primary">Button on the same row</button>
-      </div>
-  </div>
+      <p>Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
+        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
+        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
+        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
+        computation time at the inference stage.</p>
+    </body>
   </div>
 </section>
-<!-- End paper abstract -->
 
-
-<!--  Teaser video-->
-<section class="hero teaser">
+<section class="hero image-section">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/novel_refine.mp4"
-        type="video/mp4">
-      </video>
+      <img src="static/images/ogd_tb.png" alt="Description of image" style="width: 100%; height: auto;">
       <h2 class="subtitle has-text-centered" style="font-size: 16px;">
-        <b>Task Transfer</b>. 
+        Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
+        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
+        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
+        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
+        computation time at the inference stage.
       </h2>
     </div>
   </div>
 </section>
-<!-- End teaser video -->
+
+
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <body>
+      <div class="flex-container">
+          <h1 class="title is-3">Controllable Generation</h1>
+      </div>
+      <p>Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
+        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
+        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
+        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
+        computation time at the inference stage.</p>
+    </body>
+  </div>
+</section>
+
+
+<section class="hero image-section">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/goal_at5s_visual.png" alt="Description of image" style="width: 100%; height: auto;">
+      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+        Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
+        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
+        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
+        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
+        computation time at the inference stage.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="hero image-section">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/goal_at5s_visual.png" alt="Description of image" style="width: 100%; height: auto;">
+      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+        Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
+        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
+        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
+        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
+        computation time at the inference stage.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero image-section">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/rand_goal_at5s_visual.png" alt="Description of image" style="width: 100%; height: auto;">
+      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+        Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
+        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
+        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
+        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
+        computation time at the inference stage.
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- End paper abstract -->
+
+
+
 
 
 <!-- Image carousel -->
