@@ -1,40 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="OptTrajDiff Project Page">
   <meta property="og:title" content="Optimizing Diffusion Models for Joint Trajectory Prediction and Controllable Generation"/>
   <meta property="og:description" content="Optimizing Diffusion Models for Joint Trajectoy Prediction and Generation"/>
   <meta property="og:url" content="anonymous"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
-
-
   <meta name="twitter:title" content="Optimizing Diffusion Models for Joint Trajectory Prediction and Controllable Generation">
   <meta name="twitter:description" content="Optimizing Diffusion Models for Joint Trajectory Prediction and Generation">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
   <meta name="keywords" content="Diffusion model, Autonomous driving, Trajectory Prediction, Controllable Trajectory Generation">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
   <title>Optimizing Diffusion Models for Joint Trajectory Prediction and Controllable Generation</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="static/css/index.css">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -43,465 +32,194 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <style>
+    .flex-container {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      flex-direction: column; /* Stack items vertically */
+      height: 10vh; /* Full viewport height */
+      text-align: center; /* Center text within the container */
+    }
+    .custom-title {
+      margin-top: 0.5rem !important; /* Reduce margin above */
+      margin-bottom: 0.5rem !important; /* Reduce margin below */
+      padding-top: 0 !important; /* Remove padding above */
+      padding-bottom: 0 !important; /* Remove padding below */
+    }
+    .image-container {
+      text-align: center;
+    }
+    
+  </style>
 </head>
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Optimizing Diffusion Models for Joint Trajectory Prediction and Controllable Generation</h1>
-             <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-               <!-- <span class="author-block">
-                <a href="" target="_blank">Anonymous Authors</a>
-                <span class="author-block"> -->
-                <a href="https://yixiaowang7.github.io" target="_blank">Yixiao Wang</a><sup>1</sup></span>
-                <span class="author-block">
-                <a href="" target="_blank">Chen Tang</a><sup>2</sup></span>
-                <span class="author-block">
-                <a href="" target="_blank">Lingfeng Sun</a><sup>1</sup></span>
-                <span class="author-block">
-                <a href="" target="_blank">Simone Rossi</a><sup>3</sup></span>
-                <span class="author-block">
-                <a href="" target="_blank">Yichen Xie</a><sup>1</sup></span>
-                <span class="author-block">
-                <a href="" target="_blank">Chensheng Peng</a><sup>1</sup></span>
-                <span class="author-block">
-                <a href="" target="_blank">Thomas Hannagan</a><sup>3</sup></span>
-                <span class="author-block">
-                <a href="" target="_blank">Stefano Sabatini</a><sup>3</sup></span>
-                <span class="author-block">
-                <a href="" target="_blank">Nicola Poerio</a><sup>3</sup></span>
-                <span class="author-block">
-                <a href="" target="_blank">Masayoshi Tomizuka</a><sup>1</sup></span>
-                <span class="author-block">
-                <a href="" target="_blank">Wei Zhan</a><sup>1</sup><sup>&dagger;</sup></span>
-                </div>
-                <div class="is-size-5 publication-authors">
-                    <span class="author-block"><sup>1</sup>University of California, Berkeley</span>
-                    <span class="author-block"><sup>2</sup>The University of Texas at Austin</span>
-                    <span class="author-block"><sup>3</sup>Stellantis</span>
-                    <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Indicates Corresponding Author</small></span>
-                </div> 
-
-                  <div class="column has-text-centered">
-
-                    <!-- Paper link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Paper</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a href="https://github.com/YixiaoWang7/OptTrajDiff" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a >
-                </span>
-
+            <div class="is-size-5 publication-authors">
+              <a href="https://yixiaowang7.github.io" target="_blank">Yixiao Wang</a><sup>1</sup>
+              <a href="" target="_blank">Chen Tang</a><sup>2</sup>
+              <a href="" target="_blank">Lingfeng Sun</a><sup>1</sup>
+              <a href="" target="_blank">Simone Rossi</a><sup>3</sup>
+              <a href="" target="_blank">Yichen Xie</a><sup>1</sup>
+              <a href="" target="_blank">Chensheng Peng</a><sup>1</sup>
+              <a href="" target="_blank">Thomas Hannagan</a><sup>3</sup>
+              <a href="" target="_blank">Stefano Sabatini</a><sup>3</sup>
+              <a href="" target="_blank">Nicola Poerio</a><sup>3</sup>
+              <a href="" target="_blank">Masayoshi Tomizuka</a><sup>1</sup>
+              <a href="" target="_blank">Wei Zhan</a><sup>1</sup><sup>&dagger;</sup>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>University of California, Berkeley</span>
+              <span class="author-block"><sup>2</sup>The University of Texas at Austin</span>
+              <span class="author-block"><sup>3</sup>Stellantis</span>
+              <span class="eql-cntrb"><small><br><sup>&dagger;</sup>Indicates Corresponding Author</small></span>
+            </div>
+            <div class="column has-text-centered">
+              <span class="link-block">
+                <a href="static/pdfs/supplementary_material.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/YixiaoWang7/OptTrajDiff" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fab fa-github"></i></span>
+                  <span>Code</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-
-
-<!--  Teaser video-->
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <source src="static/videos/overview_sdp.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Multitask evaluation SDP on MimicGen.
-      </h2>
-    </div>
-  </div>
-</section> -->
-
-
-<style>
-  .video-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; /* Aligns videos vertically */
-    flex-wrap: wrap; /* Allows elements to wrap onto the next line */
-  }
-  .video-box {
-    text-align: center; /* Centers the caption below the video */
-    margin: 10px;
-  }
-  .fixed_video {
-    width: 480px; /* Fixed width */
-    height: 360px; /* Fixed height */
-    display: block; /* Ensures the video doesn't have inline whitespace */
-    margin: auto; /* Centers the video within its box */
-  }
-  .fixed_video_wider {
-    width: 720px; /* Fixed width */
-    height: 360px; /* Fixed height */
-    display: block; /* Ensures the video doesn't have inline whitespace */
-    margin: auto; /* Centers the video within its box */
-  }
-  .caption {
-    font-size: 16px;
-    color: #333;
-  }
-</style>
-</head>
-<!-- <body>
-<div class="video-container">
-  <div class="video-box">
-    <video class = "fixed_video" poster="" id="tree" autoplay controls muted loop >
-      <source src="static/videos/overview_sdp.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="caption"><b>Multitask - Simulation</b>.</div>
-  </div>
-  <div class="video-box">
-    <video class = "fixed_video_wider" poster="" id="tree" autoplay controls muted loop >
-      <source src="static/videos/Sparsity_of_SDP.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <div class="caption"><b>Sparsity of SDP</b>. During the inference, only some of the experts (in orange and pink) are activated.</div>
-  </div>
-</div>
-</body> -->
-
-</html>
-
-
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Diffusion models are promising for joint trajectory prediction and controllable generation in autonomous driving, but they face challenges of inefficient inference time and high computational demands. To tackle these challenges, we introduce Optimal Gaussian Diffusion (OGD) and Estimated Clean Manifold (ECM) Guidance. OGD optimizes the prior distribution for a small diffusion time $T$ and starts the reverse diffusion process from it. ECM directly injects guidance gradients to the estimated clean manifold, eliminating extensive gradient backpropagation throughout the network. Our methodology streamlines the generative process, enabling practical applications with reduced computational overhead. Experimental validation on the large-scale Argoverse 2 dataset demonstrates our approach's superior performance, offering a viable solution for computationally efficient, high-quality joint trajectory generation and controllable generation for autonomous driving.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
-
-<!-- New image section -->
-<section class="hero image-section">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/1111.png" alt="Description of image" style="width: 100%; height: auto;">
-      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
-        Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
-        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
-        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
-        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
-        computation time at the inference stage.
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End new image section -->
- 
-
-
-
-
-
-<!-- Paper abstract -->
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
-  <title>Same Row Example</title>
-  <style>
-      .flex-container {
-        display: flex;
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        flex-direction: column; /* Stack items vertically */
-        height: 10vh; /* Full viewport height */
-        text-align: center; /* Center text within the container */
-      }
-  </style>
-</head>
-
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <body>
-      <div class="flex-container">
-          <h1 class="title is-3">Joint Trajectory Prediction</h1>
-      </div>
-      <p>Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
-        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
-        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
-        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
-        computation time at the inference stage.</p>
-    </body>
-  </div>
-</section>
-
-<section class="hero image-section">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/ogd_tb.png" alt="Description of image" style="width: 100%; height: auto;">
-      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
-        Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
-        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
-        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
-        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
-        computation time at the inference stage.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <body>
-      <div class="flex-container">
-          <h1 class="title is-3">Controllable Generation</h1>
-      </div>
-      <p>Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
-        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
-        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
-        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
-        computation time at the inference stage.</p>
-    </body>
-  </div>
-</section>
-
-
-<section class="hero image-section">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/goal_at5s_visual.png" alt="Description of image" style="width: 100%; height: auto;">
-      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
-        Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
-        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
-        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
-        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
-        computation time at the inference stage.
-      </h2>
-    </div>
-  </div>
-</section>
-
-
-<section class="hero image-section">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/goal_at5s_visual.png" alt="Description of image" style="width: 100%; height: auto;">
-      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
-        Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
-        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
-        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
-        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
-        computation time at the inference stage.
-      </h2>
-    </div>
-  </div>
-</section>
-
-<section class="hero image-section">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <img src="static/images/rand_goal_at5s_visual.png" alt="Description of image" style="width: 100%; height: auto;">
-      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
-        Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD 
-        uses the mean and variance of the data distribution to calculate the optimal prior distribution 
-        at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. 
-        <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save 
-        computation time at the inference stage.
-      </h2>
-    </div>
-  </div>
-</section>
-
-<!-- End paper abstract -->
-
-
-
-
-
-<!-- Image carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        Your image here -->
-        <!-- <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        Your image here -->
-        <!-- <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item"> -->
-        <!-- Your image here -->
-        <!-- <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item"> -->
-      <!-- Your image here -->
-      <!-- <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section> -->
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-       Paper video. -->
-      <!-- <h2 class="title is-3">Video Presentation</h2>
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            Youtube embed code here -->
-            <!-- <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Diffusion models are promising for joint trajectory prediction and controllable generation in autonomous driving, but they face challenges of inefficient inference time and high computational demands. To tackle these challenges, we introduce Optimal Gaussian Diffusion (OGD) and Estimated Clean Manifold (ECM) Guidance. OGD optimizes the prior distribution for a small diffusion time $T$ and starts the reverse diffusion process from it. ECM directly injects guidance gradients to the estimated clean manifold, eliminating extensive gradient backpropagation throughout the network. Our methodology streamlines the generative process, enabling practical applications with reduced computational overhead. Experimental validation on the large-scale Argoverse 2 dataset demonstrates our approach's superior performance, offering a viable solution for computationally efficient, high-quality joint trajectory generation and controllable generation for autonomous driving.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>  -->
-<!-- End youtube video -->
+  </section>
 
-
-<!-- Video carousel -->
-<!-- <section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            Your video file here -->
-            <!-- <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            Your video file here -->
-            <!-- <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            Your video file here -->
-            <!-- <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+  <section class="hero image-section">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/1111.png" alt="Description of image" style="width: 100%; height: auto;">
+        <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+          Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.
+        </h2>
       </div>
     </div>
-  </div>
-</section> -->
-<!-- End video carousel -->
+  </section>
 
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="flex-container">
+        <h1 class="title is-3 custom-title">Joint Trajectory Prediction</h1>
+      </div>
+      <p>Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.</p>
+    </div>
+  </section>
 
-
-
-
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
+  <section class="hero image-section">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div class="image-container">
+          <img src="static/images/ogd_tb.png" alt="Description of image" style="width: 70%; height: auto">
+        </div>
+        <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+          Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.
+        </h2>
       </div>
     </div>
-  </section> -->
-<!--End paper poster -->
+  </section>
 
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="flex-container">
+        <h1 class="title is-3">Controllable Generation</h1>
+      </div>
+      <p>Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.</p>
+    </div>
+  </section>
 
-<!-- BibTex citation -->
+  <section class="hero image-section">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/guided sampling cases-2.png" alt="Description of image" style="width: 100%; height: auto;">
+        <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+          Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero image-section">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/goal_at5s_visual.png" alt="Description of image" style="width: 100%; height: auto;">
+        <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+          Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.
+        </h2>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero image-section">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <img src="static/images/rand_goal_at5s_visual.png" alt="Description of image" style="width: 100%; height: auto;">
+        <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+          Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.
+        </h2>
+      </div>
+    </div>
+  </section>
+
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>@article{wang2024sparse,
-        title={Sparse Diffusion Policy: A Sparse, Reusable, and Flexible Policy for Robot Learning},
-        author={Wang, Yixiao and Zhang, Yifei and Huo, Mingxiao and Tian, Ran and Zhang, Xiang and Xie, Yichen and Xu, Chenfeng and Ji, Pengliang and Zhan, Wei and Ding, Mingyu and others},
-        journal={arXiv preprint arXiv:2407.01531},
-        year={2024}
-      }</code></pre>
+  title={Sparse Diffusion Policy: A Sparse, Reusable, and Flexible Policy for Robot Learning},
+  author={Wang, Yixiao and Zhang, Yifei and Huo, Mingxiao and Tian, Ran and Zhang, Xiang and Xie, Yichen and Xu, Chenfeng and Ji, Pengliang and Zhan, Wei and Ding, Mingyu and others},
+  journal={arXiv preprint arXiv:2407.01531},
+  year={2024}
+}</code></pre>
     </div>
-</section>
-<!-- End BibTex citation -->
+  </section>
 
-
-  <!--<footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>-->
+  </footer>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- Statcounter tracking code -->
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+  <!-- End of Statcounter Code -->
+</body>
+</html>
 
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
