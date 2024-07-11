@@ -32,6 +32,15 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
 
   <style>
     .flex-container {
@@ -131,7 +140,9 @@
       <div class="flex-container">
         <h1 class="title is-3 custom-title">Joint Trajectory Prediction</h1>
       </div>
-      <p>Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.</p>
+      <p>
+        We propose optimizing the learnable Gaussian prior $\mathcal{N}(\mu,\Sigma)$ to enhance diffusion model performance with smaller steps, improving computational efficiency for diffusion-based autonomous driving applications.
+      </p>
     </div>
   </section>
 
@@ -142,8 +153,7 @@
           <img src="static/images/ogd_tb.png" alt="Description of image" style="width: 70%; height: auto">
         </div>
         <h2 class="subtitle has-text-centered" style="font-size: 16px;">
-          Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.
-        </h2>
+          Joint trajectory prediction results on Argoverse 2. Best result in <b>bold</b>, second best in <u>underline</u>. $T=40$ is the minimal diffusion time where OGD (Ours) outperforms VD (Vanilla Diffusion) on all metrics.        </h2>
       </div>
     </div>
   </section>
@@ -153,7 +163,9 @@
       <div class="flex-container">
         <h1 class="title is-3">Controllable Generation</h1>
       </div>
-      <p>Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.</p>
+      <p>
+        We reformulate controllable generation as multi-objective optimization, propose Estimated Clean Manifold (ECM) Guidance to avoid gradient propagation, and use reference points to improve guided sampling efficiency, realism and effectiveness.
+      </p>
     </div>
   </section>
 
@@ -162,7 +174,7 @@
       <div class="hero-body">
         <img src="static/images/guided sampling cases-2.png" alt="Description of image" style="width: 100%; height: auto;">
         <h2 class="subtitle has-text-centered" style="font-size: 16px;">
-          Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.
+          Evaluation on controllable generation: route set <b>U</b> and <b>Deceleration</b>. Magenta diamonds represent goal points. In the first (second) row, goal points are set at the fork lane (right lane). Baselines (NNM & SF) struggle to drag samples from one modal to another. Our methods can achieve better guidance effectiveness and realism.
         </h2>
       </div>
     </div>
@@ -173,7 +185,7 @@
       <div class="hero-body">
         <img src="static/images/goal_at5s_visual.png" alt="Description of image" style="width: 100%; height: auto;">
         <h2 class="subtitle has-text-centered" style="font-size: 16px;">
-          Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.
+          Visualizations on controllable generation: route set <b>GT</b> and <b>Acceleration</b>. Magenta diamonds represent goal points. Dodgerblue curves represent the predicted joint trajectory from 0s to 5s. Blue curves represent the predicted joint trajectory from 5s to 6s.
         </h2>
       </div>
     </div>
@@ -184,7 +196,7 @@
       <div class="hero-body">
         <img src="static/images/rand_goal_at5s_visual.png" alt="Description of image" style="width: 100%; height: auto;">
         <h2 class="subtitle has-text-centered" style="font-size: 16px;">
-          Overview of Optimal Gaussian Diffusion and Estimated Clean Manifold Guidance. <b>(a)</b> OGD uses the mean and variance of the data distribution to calculate the optimal prior distribution at a small T. It can largely reduce the diffusion time compared with vanilla diffusion. <b>(b)</b> ECM directly injects the gradient of guidance into the clean data manifold to save computation time at the inference stage.
+          Visualizations on controllable generation: route set <b>U</b> and <b>Acceleration</b>. Magenta diamonds represent goal points. Dodgerblue curves represent the predicted joint trajectory from 0s to 5s. Blue curves represent the predicted joint trajectory from 5s to 6s.
         </h2>
       </div>
     </div>
@@ -193,12 +205,7 @@
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{wang2024sparse,
-  title={Sparse Diffusion Policy: A Sparse, Reusable, and Flexible Policy for Robot Learning},
-  author={Wang, Yixiao and Zhang, Yifei and Huo, Mingxiao and Tian, Ran and Zhang, Xiang and Xie, Yichen and Xu, Chenfeng and Ji, Pengliang and Zhan, Wei and Ding, Mingyu and others},
-  journal={arXiv preprint arXiv:2407.01531},
-  year={2024}
-}</code></pre>
+      <pre><code>Coming soon</code></pre>
     </div>
   </section>
 
